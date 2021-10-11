@@ -22,41 +22,6 @@ body {
   line-height: 1.5;
 }
 
-// flex overlap
-// .cards {
-//   display: flex;
-//   max-width: 300px;
-//   margin-left: 50px;
-// }
-
-// .cardWrapper {
-//   overflow: hidden;
-// }
-
-// .cardWrapper:last-child,
-// .cardWrapper:hover {
-//   overflow: visible;
-// }
-
-// .card {
-//   width: 50px;
-//   height: 90px;
-//   border: 1px solid black;
-//   border-radius: 3px;
-//   background-color: rgba(255, 0, 0, 0.4);
-//   z-index: 1;
-// }
-
-// .card2 {
-//   width: 50px;
-//   height: 90px;
-//   border: 1px solid black;
-//   border-radius: 3px;
-//   background-color: green;
-//   margin-left: -10px;
-// }
-// flexoverlap ends here
-
 .container {
   display: flex;
 }
