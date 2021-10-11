@@ -1,65 +1,75 @@
+@font-face {
+  font-family: "vcr";
+  src: url("../assets/fonts/vcr-osd-mono.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  background: url(/assets/imgs/bg.jpg);
+  background: url("/assets/imgs/bg.jpg");
   color: #f4f4f4;
   font-family: "Barlow", sans-serif;
   line-height: 1.5; }
 
+.container {
+  display: flex; }
+
 .logo {
-  margin-left: 50px; }
+  margin-top: 32px;
+  margin-left: 36px; }
 
 .capa_cd {
-  margin-left: 590px;
-  position: absolute;
-  top: 15px; }
+  margin-top: 52px;
+  margin-left: 32px; }
 
-.showcase {
-  position: relative; }
+.capa_cd_mobile {
+  display: none; }
 
 .showcase_text {
   position: absolute;
-  top: 50px;
-  left: 110px;
+  top: 180px;
+  left: 100px;
   text-transform: uppercase; }
-  .showcase_text p span {
-    display: block; }
-  .showcase_text p:first-child {
+  .showcase_text .showcase_text--listen {
     font-size: 13px;
     font-weight: bold; }
-  .showcase_text p:nth-child(2) {
+  .showcase_text .showcase_text--sweet22 {
     line-height: 0.9;
-    margin: 30px 0;
+    margin: 20px 0 30px;
+    font-family: "vcr";
     font-size: 80px;
     font-weight: 400; }
-    .showcase_text p:nth-child(2) span {
+    .showcase_text .showcase_text--sweet22 span {
       background-image: linear-gradient(91.07deg, #e4985a 0.35%, #ef8eb2 99.72%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent; }
-  .showcase_text p:nth-child(3) {
-    margin-bottom: 5px;
-    background-image: linear-gradient(91.07deg, #e4985a 0.35%, #ef8eb2 99.72%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
-    font-size: 22px;
-    font-weight: bold; }
-  .showcase_text p:nth-child(4) {
+  .showcase_text .headphones {
+    display: flex;
+    margin-bottom: 5px; }
+    .showcase_text .headphones p {
+      margin-left: 5px;
+      background-image: linear-gradient(91.07deg, #e4985a 0.35%, #ef8eb2 99.72%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-size: 100%;
+      -webkit-text-fill-color: transparent;
+      font-size: 22px;
+      font-weight: bold; }
+  .showcase_text .showcase_text--stream {
     font-size: 22px;
     font-weight: normal;
-    color: #333;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-    .showcase_text p:nth-child(4) span:first-child {
-      color: #fff; }
+    color: #fff; }
+    .showcase_text .showcase_text--stream span {
+      font-weight: bold; }
 
 .btn {
   margin-top: 40px;
-  padding: 16px 48px;
+  padding: 16px 20px;
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
@@ -67,4 +77,60 @@ body {
   background: linear-gradient(91.07deg, #e4985a 0.35%, #ef8eb2 99.72%);
   color: #fff;
   font-size: 20px;
-  font-weight: 400; }
+  font-weight: 400;
+  font-family: "vcr"; }
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column; }
+  .logo {
+    margin-left: auto;
+    margin-right: auto; }
+  .capa_cd {
+    margin: 15px auto 20px; }
+  .showcase_text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center; }
+    .showcase_text .showcase_text--listen {
+      font-size: 18px; }
+    .showcase_text .showcase_text--sweet22 {
+      margin: 15px 0 25px;
+      line-height: 1;
+      font-size: 70px; }
+    .showcase_text .headphones {
+      justify-content: center;
+      margin-bottom: 10px; }
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column; }
+  .logo {
+    margin-left: auto;
+    margin-right: auto; }
+  .capa_cd {
+    display: none; }
+  .capa_cd_mobile {
+    display: block;
+    margin: 15px auto 20px; }
+  .showcase_text {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center; }
+    .showcase_text .showcase_text--listen {
+      font-size: 16px; }
+    .showcase_text .showcase_text--sweet22 {
+      margin: 15px 0 25px;
+      line-height: 1;
+      font-size: 60px; }
+    .showcase_text .headphones {
+      justify-content: center;
+      margin-bottom: 10px; }
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
