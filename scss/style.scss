@@ -132,8 +132,23 @@ body {
     margin-right: auto;
   }
 
+  // .capa_cd {
+  //   margin: 15px auto 20px;
+  // }
   .capa_cd {
-    margin: 15px auto 20px;
+    display: none;
+  }
+
+  .capa_cd_mobile {
+    display: block;
+    // margin: 15px auto 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+    }
   }
 
   .showcase_text {
@@ -178,6 +193,9 @@ body {
   .logo {
     margin-left: auto;
     margin-right: auto;
+    img {
+      width: 100%;
+    }
   }
 
   .capa_cd {
@@ -186,7 +204,14 @@ body {
 
   .capa_cd_mobile {
     display: block;
-    margin: 15px auto 20px;
+    // margin: 15px auto 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      width: 100%;
+    }
   }
 
   .showcase_text {
