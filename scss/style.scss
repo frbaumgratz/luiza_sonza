@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "vcr";
-  src: url("../assets/fonts/vcr-osd-mono.ttf") format("ttf"); // aqui também não tá funcionando, não sei pq.
-  font-weight: 400;
+  font-family: "vcr_osd_monoregular";
+  src: url("/assets/fonts/vcr-osd-mono-webfont.woff2") format("woff2"),
+    url("/assets/fonts/vcr-osd-mono-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  // font-display: swap;
-}
+} // consegui! Desse jeito tá funcionando. Adicionando o ../assets não funciona.
 
 @import "variables";
 
@@ -47,7 +47,7 @@ body {
 .showcase_text {
   position: absolute;
   top: 180px;
-  left: 100px;
+  left: 90px;
   text-transform: uppercase;
 
   .showcase_text--listen {
@@ -61,6 +61,7 @@ body {
     font-family: $ff-title;
     font-size: 80px;
     font-weight: 400;
+    word-spacing: -20px;
     span {
       background-image: $primary-color;
       -webkit-background-clip: text;
