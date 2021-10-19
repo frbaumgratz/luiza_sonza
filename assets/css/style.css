@@ -68,19 +68,6 @@ body {
     .showcase_text .showcase_text--stream span {
       font-weight: bold; }
 
-.btn {
-  margin-top: 40px;
-  padding: 16px 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  background: linear-gradient(91.07deg, #e4985a 0.35%, #ef8eb2 99.72%);
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "vcr_osd_monoregular"; }
-
 @media (max-width: 800px) {
   .container {
     flex-direction: column; }

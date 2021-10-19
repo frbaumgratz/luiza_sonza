@@ -4,9 +4,11 @@
     url("/assets/fonts/vcr-osd-mono-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-} // consegui! Desse jeito tá funcionando. Adicionando o ../assets não funciona.
+}
 
 @import "variables";
+
+// Reset
 
 * {
   margin: 0;
@@ -15,8 +17,7 @@
 }
 
 body {
-  // background: url(../assets/imgs/bg.jpg); Não consigo entender, mas assim não funciona.
-  background: url("/assets/imgs/bg.jpg"); // assim funciona!
+  background: url("/assets/imgs/bg.jpg");
   color: $light-color;
   font-family: $ff-regular;
   line-height: 1.5;
@@ -41,6 +42,22 @@ body {
 .capa_cd_mobile {
   display: none;
 }
+
+// Utilities
+
+// .btn {
+//   margin-top: 40px;
+//   padding: 16px 20px;
+//   cursor: pointer;
+//   text-transform: uppercase;
+//   text-align: center;
+//   border: none;
+//   background: $primary-color;
+//   color: #fff;
+//   font-size: 20px;
+//   font-weight: 400;
+//   font-family: $ff-title;
+// }
 
 // Showcase
 
@@ -99,20 +116,6 @@ body {
       font-weight: bold;
     }
   }
-}
-
-.btn {
-  margin-top: 40px;
-  padding: 16px 20px;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  background: $primary-color;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: $ff-title;
 }
 
 // Media Queries

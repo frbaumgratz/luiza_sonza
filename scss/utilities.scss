@@ -1,0 +1,17 @@
+@import "variables";
+
+// Utilities
+
+.btn {
+  margin-top: 40px;
+  padding: 16px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background: $primary-color;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $ff-title;
+}
